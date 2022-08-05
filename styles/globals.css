@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav_btn {
+    @apply py-3 px-6 bg-backgroundLight dark:bg-backgroundDark rounded-lg drop-shadow-md;
+  }
+}
