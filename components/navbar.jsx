@@ -30,8 +30,9 @@ function navbar() {
   return (
     <header className='flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 sticky backdrop-blur-lg'>
       <label className='text-2xl sm:text-3xl'>Bem vindo ao meu portfólio</label>
-      <nav className='flex md:w-auto space-x-10'>
-        <div className='hidden md:flex justify-between gap-10'>
+      {/* large view nav */}
+      <nav className='hidden md:flex md:w-auto space-x-10'>
+        <div className='md:flex justify-between gap-10'>
           {dropdownLinks.map((items, index) => {
             return (
               <Link href={items.Link} key={index}>
@@ -40,9 +41,11 @@ function navbar() {
             );
           })}
         </div>
-        <span className='md:hidden'>
-          <Dropdown />
-        </span>
+        {ThemeChanger()}
+      </nav>
+      {/* mobile view nav */}
+      <nav className='flex flex-row gap-16'>
+        <Dropdown />
         {ThemeChanger()}
       </nav>
     </header>

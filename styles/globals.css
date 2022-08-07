@@ -12,4 +12,8 @@
   body {
     @apply duration-300 bg-backgroundLight dark:bg-backgroundDark min-h-screen;
   }
+
+  section {
+    @apply snap-center;
+  }
 }
