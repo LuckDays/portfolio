@@ -4,6 +4,12 @@
 
 @layer components {
   .nav_btn {
-    @apply py-3 px-6 bg-backgroundLight dark:bg-backgroundDark rounded-lg drop-shadow-md;
+    @apply py-3 px-6 duration-300 bg-backgroundLight dark:bg-backgroundDark hover:bg-backgroundLighter hover:dark:bg-backgroundDarker rounded-lg drop-shadow-md;
+  }
+}
+
+@layer base {
+  body {
+    @apply duration-300 bg-backgroundLight dark:bg-backgroundDark min-h-screen;
   }
 }

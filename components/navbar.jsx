@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import Dropdown from "./dropdown";
+import { dropdownLinks } from "../components/dropdownLinks";
+import { HiSun } from "react-icons/hi";
+import { HiMoon } from "react-icons/hi";
 
 function navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -14,39 +18,31 @@ function navbar() {
     const currentTheme = theme === "system" ? systemTheme : theme;
 
     if (currentTheme === "dark") {
-      return (
-        <button className='nav_btn' onClick={() => setTheme("light")}>
-          Que se faça a luz!
-        </button>
-      );
+      return <HiSun className='h-12 w-6' onClick={() => setTheme("light")} />;
     } else {
-      return (
-        <button className='nav_btn' onClick={() => setTheme("dark")}>
-          Apaga a luz!
-        </button>
-      );
+      return <HiMoon className='h-12 w-6' onClick={() => setTheme("dark")} />;
     }
   };
 
   return (
-    <div className='flex items-center justify-evenly py-5 sticky backdrop-blur-lg'>
-      <label className='text-2xl'>Bem vindo ao meu portfólio</label>
-      <div className='flex justify-between gap-10'>
-        <Link href={""}>
-          <a className='nav_btn'>Começo</a>
-        </Link>
-        <Link href={""}>
-          <a className='nav_btn'>Sobre</a>
-        </Link>
-        <Link href={""}>
-          <a className='nav_btn'>Projetos</a>
-        </Link>
-        <Link href={""}>
-          <a className='nav_btn'>Contato</a>
-        </Link>
+    <header className='flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 sticky backdrop-blur-lg'>
+      <label className='text-3xl'>Bem vindo ao meu portfólio</label>
+      <nav className='flex md:w-auto space-x-10'>
+        <div className='hidden md:flex justify-between gap-10'>
+          {dropdownLinks.map((items, index) => {
+            return (
+              <Link href={items.Link} key={index}>
+                <a className='nav_btn'>{items.linkName}</a>
+              </Link>
+            );
+          })}
+        </div>
+        <span className='md:hidden'>
+          <Dropdown />
+        </span>
         {ThemeChanger()}
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 

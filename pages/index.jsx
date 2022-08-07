@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Layout } from "../components";
+import Greetings from "../components/greetings";
 
 export default function Home() {
   return (
@@ -9,9 +9,10 @@ export default function Home() {
         <meta name='description' content='Dev portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Layout>
+
+      <main className='flex flex-col justify-center'>
         <Greetings />
-      </Layout>
+      </main>
     </div>
   );
 }
