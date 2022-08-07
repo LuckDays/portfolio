@@ -7,6 +7,9 @@ import { HiSun } from "react-icons/hi";
 import { HiMoon } from "react-icons/hi";
 
 function navbar() {
+  {
+    /* Changing Theme Logic for Server Hydradation */
+  }
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -26,7 +29,7 @@ function navbar() {
 
   return (
     <header className='flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 sticky backdrop-blur-lg'>
-      <label className='text-3xl'>Bem vindo ao meu portfólio</label>
+      <label className='text-2xl sm:text-3xl'>Bem vindo ao meu portfólio</label>
       <nav className='flex md:w-auto space-x-10'>
         <div className='hidden md:flex justify-between gap-10'>
           {dropdownLinks.map((items, index) => {
