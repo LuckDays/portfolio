@@ -13,7 +13,29 @@
     @apply duration-300 bg-backgroundLight dark:bg-backgroundDark min-h-screen scroll-smooth;
   }
 
+  header {
+    @apply snap-start;
+  }
+
+  footer {
+    @apply snap-end;
+  }
+
   section {
     @apply snap-center;
+  }
+
+  /* Estilizando a scrollbar */
+
+  *::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-blue-900 bg-opacity-30;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-blue-900 bg-opacity-30 rounded;
   }
 }

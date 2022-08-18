@@ -2,7 +2,10 @@ import { skillList } from "./skillList";
 
 const skills = () => {
   return (
-    <section id='about' className='mt-10 flex items-center justify-center'>
+    <section
+      id='about'
+      className='pt-36 lg:pt-24 flex items-center justify-center'
+    >
       <div className='md:container grid xm:grid-rows-2 md:grid-cols-2'>
         {/* First Column */}
         <div className='flex flex-col items-start p-10 gap-6 row-span-1 md:col-span-1'>
@@ -10,7 +13,7 @@ const skills = () => {
             return (
               <div
                 key={index}
-                className='relative drop-shadow-lg overflow-hidden flex p-5 items-center rounded-md bg-colorPrimary text-white justify-between w-full xl:hover:w-[680px] hover:bg-colorSecondary duration-300 ease-out'
+                className='relative drop-shadow-lg overflow-hidden flex p-5 items-center rounded-md bg-colorPrimary text-white justify-between w-full xl:hover:translate-x-3 hover:bg-colorSecondary duration-300 ease-out'
               >
                 <label className='z-40'>{items.title}</label>
                 <em className='z-40'>{items.level}</em>

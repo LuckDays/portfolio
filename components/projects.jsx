@@ -1,6 +1,9 @@
 const projects = () => {
   return (
-    <section className='mt-10 flex items-center justify-center' id='projects'>
+    <section
+      className='pt-36 lg:pt-24 flex items-center justify-center'
+      id='projects'
+    >
       <div className='md:container flex flex-col items-center px-5'>
         <h2 className='text-2xl font-semibold'>Projetos Recentes</h2>
         <div className='container mt-4'>
