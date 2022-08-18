@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Greetings from "../components/greetings";
+import { Greetings, Skills, Projects } from "../components/";
 
 export default function Home() {
   return (
@@ -10,8 +10,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='flex flex-col items-center snap-y'>
+      <main className='flex flex-col snap-y'>
         <Greetings />
+        <Skills />
+        <Projects />
       </main>
     </>
   );

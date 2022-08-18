@@ -28,8 +28,19 @@ function navbar() {
   };
 
   return (
-    <header className='flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 sticky backdrop-blur-lg'>
-      <label className='text-2xl sm:text-3xl'>Bem vindo ao meu portfólio</label>
+    <header className='flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 sticky top-0 backdrop-blur-lg z-40'>
+      <h1>
+        <label className='text-2xl sm:text-3xl'>
+          Bem vindo ao meu portfólio
+        </label>
+      </h1>
+
+      {/* mobile view nav */}
+      <nav className='md:hidden flex flex-row gap-16'>
+        <Dropdown />
+        {ThemeChanger()}
+      </nav>
+
       {/* large view nav */}
       <nav className='hidden md:flex md:w-auto space-x-10'>
         <div className='md:flex justify-between gap-10'>
@@ -41,11 +52,6 @@ function navbar() {
             );
           })}
         </div>
-        {ThemeChanger()}
-      </nav>
-      {/* mobile view nav */}
-      <nav className='flex flex-row gap-16'>
-        <Dropdown />
         {ThemeChanger()}
       </nav>
     </header>
