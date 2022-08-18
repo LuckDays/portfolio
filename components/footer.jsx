@@ -9,8 +9,7 @@ function Footer() {
           <p className='text-justify w-full'>
             Agradeço pela visita, aqui me despeço e também peço que me faça mais
             visitas pois daqui para frente certamente irei melhorar ainda mais
-            minhas habiliades em front-end e quem sabe, partir para o
-            "Full-Stack"
+            minhas habiliades em front-end e quem sabe, partir para o Full Stack
           </p>
         </div>
 
