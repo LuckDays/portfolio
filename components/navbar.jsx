@@ -6,7 +6,7 @@ import { dropdownLinks } from "../components/dropdownLinks";
 import { HiSun } from "react-icons/hi";
 import { HiMoon } from "react-icons/hi";
 
-function navbar() {
+function Navbar() {
   {
     /* Changing Theme Logic for Server Hydradation */
   }
@@ -58,4 +58,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;

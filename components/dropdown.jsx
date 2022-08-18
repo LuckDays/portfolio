@@ -2,7 +2,7 @@ import { useState } from "react";
 import { dropdownLinks } from "./dropdownLinks";
 import Link from "next/link";
 
-function dropdown() {
+function Dropdown() {
   {
     /* Dropdown Nav Logic */
   }
@@ -32,4 +32,4 @@ function dropdown() {
   );
 }
 
-export default dropdown;
+export default Dropdown;

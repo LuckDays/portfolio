@@ -1,6 +1,6 @@
 import { skillList } from "./skillList";
 
-const skills = () => {
+const Skills = () => {
   return (
     <section
       id='about'
@@ -39,4 +39,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;

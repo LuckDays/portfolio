@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function footer() {
+function Footer() {
   return (
     <footer id='contact' className='w-full pt-36 lg:pt-24'>
       <div className='grid grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 sm:h-[450px] w-full bg-blue-900 bg-opacity-10'>
@@ -40,4 +40,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

@@ -1,6 +1,6 @@
 import Image from "next/Image";
 
-function greetings() {
+function Greetings() {
   return (
     <div className='bg-blue-900 flex flex-row items-center justify-center w-full bg-opacity-10'>
       <section
@@ -30,4 +30,4 @@ function greetings() {
   );
 }
 
-export default greetings;
+export default Greetings;

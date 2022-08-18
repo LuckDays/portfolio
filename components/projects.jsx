@@ -1,4 +1,4 @@
-const projects = () => {
+const Projects = () => {
   return (
     <section
       className='pt-36 lg:pt-24 flex items-center justify-center'
@@ -16,4 +16,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
