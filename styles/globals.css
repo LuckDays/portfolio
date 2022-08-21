@@ -22,7 +22,7 @@
   }
 
   section {
-    @apply snap-center;
+    @apply snap-center min-h-screen;
   }
 
   /* Estilizando a scrollbar */

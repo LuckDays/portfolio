@@ -10,7 +10,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='flex flex-col snap-y'>
+      <main className='flex flex-col snap-y snap-mandatory'>
         <Greetings />
         <Skills />
         <Projects />

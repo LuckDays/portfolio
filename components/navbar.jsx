@@ -28,7 +28,7 @@ function Navbar() {
   };
 
   return (
-    <header className='flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 sticky top-0 backdrop-blur-lg z-40'>
+    <header className='sticky flex flex-col gap-5 lg:flex-row items-center justify-evenly py-5 top-0 backdrop-blur-lg z-40'>
       <h1>
         <label className='text-2xl sm:text-3xl'>
           Bem vindo ao meu portfólio

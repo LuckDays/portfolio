@@ -2,11 +2,11 @@ function Greetings() {
   return (
     <div className='bg-blue-900 flex flex-row items-center justify-center w-full bg-opacity-10'>
       <section
-        id='/'
+        id='greetings'
         className='grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-2 container items-center justify-center md:h-[240px] lg:h-[320px] xl:h-[400px] 2xl:h-[480px] '
       >
-        <div className='flex flex-col justify-center px-6'>
-          <h2 className='text-4xl md:text-5xl'>Lucas de Sousa Dias Frota</h2>
+        <div className='flex flex-col items-start justify-end md:justify-center h-full px-6'>
+          <h2 className='text-5xl'>Lucas de Sousa Dias Frota</h2>
           <em>
             <p>
               <q>
@@ -23,7 +23,11 @@ function Greetings() {
             <img
               src='/banner.png'
               alt='banner1'
-              className=' h-[150px] md:h-[240px] lg:h-[320px] xl:h-[400px] 2xl:h-[480px] md:w-[1200px]'
+              className='
+                w-[263px] h-[350px]
+                lg:h-[400px] lg:w-[300px]
+                xl:h-[400px]
+                '
             />
           </div>
         </div>
