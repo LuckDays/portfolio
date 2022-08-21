@@ -19,7 +19,7 @@ function Footer() {
             <ul className='appearance-none flex flex-col lg:flex-row justify-around gap-8'>
               <li className='duration-200 bg-blue-900 bg-opacity-10 md:hover:bg-opacity-25 focus:bg-opacity-30 p-2 rounded-lg px-6 items-center justify-center'>
                 <a
-                  rel='noreferrer, nofollow, external'
+                  rel='noreferrer'
                   className='flex gap-6 items-center justify-center'
                   href='https://wa.me/5588992396764'
                   target='_blank'
@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li className='duration-200 bg-blue-900 bg-opacity-10 md:hover:bg-opacity-25 focus:bg-opacity-30 p-2 rounded-lg px-6 items-center justify-between'>
                 <a
-                  rel='noreferrer, nofollow, external'
+                  rel='noreferrer'
                   className='flex gap-6 items-center justify-center'
                   href='https://www.linkedin.com/in/lucas-dias-a3808821b/'
                   target='_blank'
